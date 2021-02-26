@@ -51,7 +51,6 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
         setTime(time - 1);
       }, 1000);
     } else if (isActive && time === 0) {
-      console.log("Finalizou");
       setHasFinished(true);
       setIsActive(false);
       startNewChallenge();
